@@ -1,0 +1,7 @@
+1、本项目是基于spring boot 2.1.0版本的 spring cloud config的client工程
+
+2、本项目仅仅用于个人学习测试使用
+
+3、作者在搭建本项目时遇到一个问题，即本项目的配置文件必须是bootstrap.yml或者bootstrap.properties,
+若使用application.yml或者application.properties,项目报错无法正常启动。初步分析：位于启动类的@Value注解的优先级高于application
+命名的配置文件，无法找到属性所以报错，而bootstrap命名的配置文件优先级高于@Value.

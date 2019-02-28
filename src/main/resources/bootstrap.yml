@@ -1,0 +1,10 @@
+server:
+  port: 1226
+spring:
+  application:
+    name: ms-configClient
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:1012/
