@@ -11,3 +11,5 @@
   application.yml（application.properties) 应用程序特有配置信息，可以用来配置后续各个模块中需使用的公共参数等。
 
   bootstrap.yml 先于 application.yml 加载
+
+5、通过测试得知，当配置属性配置在application.yml中，@Value可以正常读取。
